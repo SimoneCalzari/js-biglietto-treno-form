@@ -1,3 +1,4 @@
+/* #region GENERAL */
 * {
   padding: 0;
   margin: 0;
@@ -12,6 +13,14 @@ body {
   max-width: 80%;
   margin: 0 auto;
 }
+
+/* .appari {
+  display: block;
+} */
+
+/* #endregion GENERAL */
+
+/* #region CALCOLATORE TICKET */
 
 main #ticket-calc h1 {
   color: white;
@@ -39,6 +48,7 @@ main #ticket-calc #form-container .input-box label {
   margin-bottom: 10px;
   color: #b91547;
   font-size: 22px;
+  font-weight: 700;
 }
 
 main #ticket-calc #form-container .input-box input {
@@ -49,11 +59,16 @@ main #ticket-calc #form-container .input-box input {
   padding: 5px 0;
 }
 
+main #ticket-calc #form-container .input-box input:focus {
+  outline: 0;
+  background-color: pink;
+}
+
 main #ticket-calc #form-container .input-box select {
   border:1px solid #b91547;
   border-radius: 5px;
-  height: 30px;
-  font-size: 18px;
+  font-size: 20px;
+  padding: 5px;
 }
 
 main #ticket-calc #form-container .input-buttons {
@@ -76,3 +91,65 @@ main #ticket-calc #form-container .input-buttons button:hover {
   cursor: pointer;
   background-color: pink;
 }
+
+/* #endregion CALCOLATORE TICKET */
+
+/* #region TICKET */
+
+main #ticket-container {
+  margin-top: 40px;
+  display: none;
+}
+
+main #ticket-container.appari {
+  display: block;
+}
+
+main #ticket-container h2 {
+  text-align: center;
+  color: white;
+  text-transform: uppercase;
+  margin-bottom: 25px;
+}
+
+main #ticket-container #ticket {
+  background-color: white;
+  padding: 20px;
+}
+
+main #ticket-container #ticket h3 {
+  text-transform: uppercase;
+}
+
+main #ticket-container #ticket .ticket-body {
+  display: flex;
+  border-top: 1px solid gray;
+  border-bottom: 1px solid gray;
+}
+
+main #ticket-container #ticket .ticket-body .ticket-body-sect:first-child {
+  width: 30%;
+  padding: 15px;
+  background-color: #757575;
+}
+
+main #ticket-container #ticket .ticket-body .ticket-body-sect:first-child div {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+main #ticket-container #ticket .ticket-body .ticket-body-sect:not(:first-child) {
+  width: calc(70% / 4);
+  padding: 15px;
+}
+
+main #ticket-container #ticket .ticket-body .ticket-body-sect:not(:first-child) h3 {
+  text-transform: capitalize;
+  margin-bottom: 50px;
+}
+
+main #ticket-container #ticket .ticket-body .ticket-body-sect:not(:first-child) div {
+  font-size: 18px;
+}
+
+/* #endregion TICKET */
