@@ -3,3 +3,76 @@
   margin: 0;
   box-sizing: border-box;
 }
+
+body {
+  background-color: #b91547;
+}
+
+.container {
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+main #ticket-calc h1 {
+  color: white;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 25px 0;
+}
+
+main #ticket-calc #form-container {
+  background-color: white;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding: 25px 0;
+  border-radius: 15px;
+}
+
+main #ticket-calc #form-container .input-box {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+main #ticket-calc #form-container .input-box label {
+  margin-bottom: 10px;
+  color: #b91547;
+  font-size: 22px;
+}
+
+main #ticket-calc #form-container .input-box input {
+  border:1px solid #b91547;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 20px;
+  padding: 5px 0;
+}
+
+main #ticket-calc #form-container .input-box select {
+  border:1px solid #b91547;
+  border-radius: 5px;
+  height: 30px;
+  font-size: 18px;
+}
+
+main #ticket-calc #form-container .input-buttons {
+  width: 100%;
+  text-align: center;
+  margin-top: 60px;
+}
+
+main #ticket-calc #form-container .input-buttons button {
+  color: #b91547;
+  font-weight: bold;
+  font-size: 18px;
+  margin-right: 20px;
+  padding: 5px 10px;
+  border-radius: 3px;
+  border: 1px solid gray;
+}
+
+main #ticket-calc #form-container .input-buttons button:hover {
+  cursor: pointer;
+  background-color: pink;
+}

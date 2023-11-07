@@ -3,10 +3,56 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- MIO FOGLIO STILE -->
     <link rel="stylesheet" href="css/style.css">
+    <!-- MIO FOGLIO STILE -->
     <title>Biglietto Treno Form</title>
   </head>
   <body>
+    <main>
+      <div class="container">
+        <!-- CALCOLATORE PREZZO BIGLIETTI -->
+        <div id="ticket-calc">
+          <!-- TITOLO -->
+          <h1>Calcola il prezzo del tuo biglietto</h1>
+          <!-- TITOLO -->
+          <!-- FORM -->
+          <div id="form-container">
+            <!-- NOME COGNOME -->
+            <div class="input-box">
+              <label for="nome-cognome">Nome Cognome</label>
+              <input type="text" id="nome-cognome">
+            </div>
+            <!-- NOME COGNOME -->
+            <!-- KM VIAGGIO -->
+            <div class="input-box">
+              <label for="km-viaggio">Km da percorrere</label>
+              <input type="text" id="km-viaggio">
+            </div>
+            <!-- KM VIAGGIO -->
+            <!-- ETA UTENTE -->
+            <div class="input-box">
+              <label for="eta-utente">Fascia d'età</label>
+              <select name="eta-fasce" id="eta-utente">
+                <option>Minorenne</option>
+                <option>Maggiorenne</option>
+                <option>Over65</option>
+              </select>
+            </div>
+            <!-- ETA UTENTE -->
+            <!-- BOTTONI  -->
+            <div class="input-buttons">
+              <button id="btn-genera">Genera</button>
+              <button id="btn-annulla">Annulla</button>
+            </div>
+            <!-- BOTTONI  -->
+          </div>
+          <!-- FORM -->
+        </div>
+        <!-- CALCOLATORE PREZZO BIGLIETTI -->
+
+      </div>
+    </main>
     <script src="js/main.js"></script>
   </body>
 </html>
